@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Visualization using Unity</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.6;
+    margin: 0 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav {
+    background-color: black;
+    height: 3cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+  }
+  .tagline {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    margin: 20px;
+  }
+  .x
+  {
+    margin: auto;
+  width: 50%;
+ 
+  padding: 10px;
+  }
+
+  .y{
+    margin: auto;
+    width: 50%;
+   
+    padding: 10px;
+  }
+ 
+  .img{
+    margin: auto;
+  width: 50%;
+ 
+  padding: 10px;
+  }
+
+  .dataverse-description {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+  }
+
+  .dataverse-description:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    top: -25px;
+    left: -25px;
+  }
+
+  .dataverse-description p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .applications {
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .applications h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .applications ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .applications li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .section {
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .section li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .conclusion {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+  }
+
+  .conclusion:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    top: -25px;
+    left: -25px;
+  }
+  
+  .conclusion p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .creators {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .creator-block {
+    width: calc(20% - 20px);
+    padding: 10px;
+    background-color: pink;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  .creator-block:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .creator-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+</style>
+</head>
+<body>
+  <nav>
+    <h1>Data Visualization using Unity</h1>
+  </nav>
+  <div class="tagline">Project tagline -> Unity in Data: Virtualizing Realities through Seamless Integration.</div>
+  <div class="intro">
+    <h2>Introduction</h2>
+    <p>Welcome to a groundbreaking exploration into the dynamic realm of data virtualization, where 3D visualization meets the power of Unity software. Our project embarks on a transformation in the way we interact with and comprehend data. In a world inundated with information, conventional 2D data representation often falls short in capturing the complexity and richness of datasets. Acknowledging this limitation, our project takes a bold step into the third dimension, leveraging the capabilities of Unity to bring data to life in a vibrant 3D environment. Our project's 3D data visualization isn't just visually captivating—it's also intellectually enlightening. Patterns that might have gone unnoticed in traditional representations now emerge from the depths, guiding data-driven decisions and discoveries. The immersive environment enhances analytical capabilities, turning raw information into actionable insights.</p>
+  </div>
+  <div class="x">
+
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/5Kd9cvTiiD0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </div>
+ <div class="data-viz">
+    <h2>What is Data Visualization?</h2>
+   <p>Data visualization is a graphical representation of quantitative information and data by using visual elements like graphs, charts, and maps. Data visualization converts large and small data sets into visuals, which are easy to understand and process for humans.Data visualization tools provide accessible ways to understand outliers, patterns, and trends in the data.
+    In the world of Big Data, data visualization tools and technologies are required to analyze vast amounts of information. Data visualizations are common in everyday life, appearing in the form of graphs and charts. The combination of multiple visualizations and bits of information is still referred to as Infographics.Data visualizations are used to discover unknown facts and trends. Line charts display change over time, bar and column charts observe relationships and make comparisons, pie charts show parts-of-a-whole, and maps share geographical data visually.
+    Today's data visualization tools go beyond the charts and graphs used in Microsoft Excel spreadsheets, displaying data in more sophisticated ways such as dials and gauges, geographic maps, heat maps, pie charts, and fever charts. Data visualization is important because it processes information in human brains. Using graphs and charts to visualize complex data sets is more comfortable compared to studying spreadsheets and reports.Data visualization is an easy and quick way to convey concepts universally. You can experiment with different outlines by making slight adjustments. Data visualization has more specialties, such as identifying areas that need improvement or modifications, clarifying factors that influence customer behavior, helping understand where to place products, and predicting sales volumes.
+    </p>
+
+     </div>
+     <div class="unity-usage">
+        <h2>Use of Unity</h2>
+        <p>
+            When Unity boots up for the first time, you might find the number of windows, icons, and options to be a little overwhelming. Thankfully, things are simpler than they look.
+
+How to make a game in Unity
+Here are the main windows you will be looking at and what they each do:
+
+Hierarchy: On the furthest left by default, this shows you a long list of all the GameObjects in your “scene.” This makes it easy for you to quickly locate and select any aspect of your game in order to change its properties. GameObjects are simply elements that are included in your game.
+
+Scene: The biggest window in the middle of the Unity software. This shows you a view of the current level, menu, or game world that you’re currently working with (called a “scene”). This window is where you can freely drag, drop, grow, and shrink GameObjects.
+
+The icons found along the top left of the Unity software change the way you interact with GameObjects and the scene. The hand will let you drag your view around for instance, whereas the arrows let you move objects in 3D space along three axes.
+
+Game: This is usually hidden behind the Scene window and can be accessed by hitting the tab along the top. The Game view shows you the view of your scene as it is scene in the game. That means you’ll have the same perspective as the camera and won’t be able to move things around. This is also where the game plays when you test it.
+
+Asset Store: The asset store is also found on a tab and will give you access to “assets” that have been developed by the community.
+
+Inspector: This window is found on the furthest right of the UI. The Inspector will let you view and edit the properties of a selected GameObject. That could mean changing the size (scale) or position (transform), or it could mean adding “components” such as C# script or colliders.
+
+Project: The project window is found at the bottom of your screen and will show you all of the files that make up your game. This is where you will create C# scripts and then select them to open in Unity. You can also drag and drop 3D files or textures into here if you want to use them in your game.
+
+Console: Finally, the console is where you can see information from Unity itself. This will let you know if there are errors or warnings in your code, or if there are issues that need addressing with the Unity software setup itself.
+
+The standard assets were used for the project. When you create a new project in Unity, you can choose to include Standard Assets collections in your project. Unity copies the assets you choose to include from the Unity install folder into your new project folder. This means that if you upgrade your Unity Editor to a newer version, the Standard Assets you have already imported into your project do not upgrade: You have to manually upgrade them. The standard assets were used for the project. When you create a new project in Unity, you can choose to include Standard Assets collections in your project. Unity copies the assets you choose to include from the Unity install folder into your new project folder. This means that if you upgrade your Unity Editor to a newer version, the Standard Assets you have already imported into your project do not upgrade: You have to manually upgrade them. Unity ships with multiple Standard Assets. These are collections of assets that are widely used by most Unity customers. These are: 2D, Cameras, Characters, CrossPlatformInput, Effects, Environment, ParticleSystems, Prototyping, Utility, Vehicles.
+        </p>
+        </div>
+        <div class="img"> 
+        <img src="https://live.staticflickr.com/65535/53117652476_2a8b96fedd_z.jpg" alt="unity">
+        </div>
+      <div class="CSV">
+        <h2>Data importing into Unity</h2>
+        <p>Unity can read a wide variety of data types. As you can imagine, it takes a lot of different kinds of data to build a fully-functioning video game, such as images, 3d models, and sounds. Naturally, Unity can recognize CSV files. Getting Unity to parse CSVs, however, is unfortunately not as easy. There are two main steps: 1) creating a script to actually read and parse the data, 2) getting your data and putting it into a folder called Resources. You can find sample data <a href="https://sites.psu.edu/bdssblog/files/2017/03/iris-2lg34dn.csv" target="_blank">https://sites.psu.edu/bdssblog/files/2017/03/iris-2lg34dn.csv</a>.</p>
+      </div>
+  </div>
+  <div class = "y">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/w-UDUtQa3Kg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="section">
+  <h2>DataVerse</h2>
+  <div class="dataverse-description">
+    <p>The decision to embark on the journey of creating DataverseVR was driven by the convergence of two pivotal factors: the burgeoning importance of data visualization and the transformative potential of virtual reality (VR) technology. In an era dominated by data-driven insights, the ability to visually represent complex datasets is paramount. Traditional 2D graphs often fall short in capturing the nuances and relationships within the data. Recognizing this limitation, our team sought a solution that could bridge the gap between data analysis and an immersive, intuitive exploration experience.</p>
+    
+    <p>Enter virtual reality, a technology that has already revolutionized industries ranging from entertainment to education. The idea of stepping into the data, interacting with it in a spatial context, and gaining insights that traditional methods might overlook was captivating. The decision to employ Unity and C# programming emerged from their combined potential to create a dynamic, interactive environment that could seamlessly translate raw CSV files into captivating 3D scatterplots.</p>
+    
+    <p>Our team's passion for both data analytics and emerging technologies like VR converged beautifully in the concept of DataverseVR. This project not only aligns with our shared fascination for pushing boundaries but also reflects our commitment to addressing real-world challenges. By creating an innovative tool that not only enhances data exploration but also reshapes the way data is presented and understood, we aim to empower individuals from various fields to unlock deeper insights, make informed decisions, and experience data like never before. The promise of DataverseVR lies not just in its technical intricacies, but in its potential to transform the very nature of data interaction, setting a new standard for the intersection of data visualization and immersive technology.</p>
+  </div>
+</div>
+
+<div class="applications">
+  <h3>Applications</h3>
+  <ul>
+    <li><strong>Education Enhancement:</strong> DataverseVR can be utilized as an educational tool to make data analysis and visualization more engaging and accessible. Students can immerse themselves in the data, gaining a deeper understanding of statistical concepts and patterns.</li>
+    <li><strong>Data Exploration and Analysis:</strong> Researchers and analysts can use DataverseVR to explore complex datasets in an entirely new way. By interacting with data points in a 3D space, they can uncover relationships and trends that might not be immediately apparent in traditional graphs.</li>
+    <li><strong>Scientific Research:</strong> In fields like biology, physics, and astronomy, DataverseVR can facilitate the examination of intricate datasets. Researchers can manipulate data points to simulate various scenarios and better comprehend the implications of their findings.</li>
+    <li><strong>Presentations and Communication:</strong> Presenting data-driven insights becomes more captivating and memorable with DataverseVR. Audiences can be taken on an immersive journey through the data, enhancing engagement and comprehension.</li>
+    <li><strong>Art and Design:</strong> DataverseVR can be used creatively to transform datasets into visual artworks. Artists and designers can create immersive experiences that blend data with artistic expression.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h3>Future Advancements</h3>
+  <ul>
+    <li><strong>Real-time Data Streaming:</strong> Enable the visualization of real-time data streams, allowing users to observe and interact with data as it updates in real-time, suitable for applications like monitoring stock market data or IoT sensor data.</li>
+    <li><strong>Advanced Interaction:</strong> Develop more sophisticated ways for users to interact with data points, such as gesture-based controls, voice commands, and haptic feedback, enhancing the immersion and usability of the VR experience.</li>
+    <li><strong>Data Integration:</strong> Extend compatibility to work with various data formats beyond CSV, ensuring that DataverseVR can seamlessly incorporate data from databases, spreadsheets, APIs, and more.</li>
+    <li><strong>Predictive Analytics:</strong> Integrate machine learning algorithms to predict future data trends and visualize potential scenarios, empowering users to make proactive decisions based on predictive insights.</li>
+    <li><strong>Analytics Toolkit:</strong> Offer built-in analytical tools and statistical functions, allowing users to perform data analysis within the VR environment and gain insights without leaving the application.</li>
+  </ul>
+  <div class="conclusion">
+    <p>As technology continues to evolve and VR technology becomes more accessible, the possibilities for advancing DataverseVR are vast. By combining cutting-edge developments in data analysis, virtual reality, and user experience design, the project could redefine how individuals interact with and derive value from their data in the years to come.</p>
+  </div>
+</div>
+
+<div class="creators">
+  <div class="creator-block">
+    <div class="creator-name">Anju, IT, IGDTUW</div>
+  </div>
+  <div class="creator-block">
+    <div class="creator-name">Anshul, IT, IGDTUW</div>
+  </div>
+  <div class="creator-block">
+    <div class="creator-name">Pooja, IT, IGDTUW</div>
+  </div>
+  <div class="creator-block">
+    <div class="creator-name">Jyoti, IT, IGDTUW</div>
+  </div>
+  <div class="creator-block">
+    <div class="creator-name">Kanishka, IT, IGDTUW</div>
+  </div>
+  
+</body>
+</html>

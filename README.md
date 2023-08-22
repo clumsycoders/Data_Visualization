@@ -1,1 +1,5 @@
-# Data_Visualization
+# UnityScatterplot
+Very basic scatterplot generation in unity based off of a CSV file
+Welcome to a groundbreaking exploration into the dynamic realm of data virtualization, where 3D visualization meets the power of Unity software. Our project embarks on a transformation in the way we interact with and comprehend data.In a world inundated with information, conventional 2D data representation often falls short in capturing the complexity and richness of datasets. Acknowledging this limitation, our project takes a bold step into the third dimension, leveraging the capabilities of Unity to bring data to life in a vibrant 3D environment.Our project's 3D data visualization isn't just visually captivating—it's also intellectually enlightening. Patterns that might have gone unnoticed in traditional representations now emerge from the depths, guiding data-driven decisions and discoveries. The immersive environment enhances analytical capabilities, turning raw information into actionable insights.
+
+
